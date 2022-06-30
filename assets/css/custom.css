@@ -1,0 +1,34 @@
+.fixed-top{
+    background-color: black;
+}
+
+#header .logo img{
+    max-height: 70px;
+}
+
+#header.header-scrolled, #header.header-inner-pages{
+    background-color: black;
+}
+
+#hero{
+    background: #ffffff;
+
+}
+.imageAbout{
+    max-height: 20%;
+}
+
+#hero h1{
+    color: black;
+}
+
+#hero h2 {
+    color: rgb(0 141 162);
+    margin-bottom: 10px;
+    font-size: 1.5rem;
+    font-weight: 400;
+}
+
+.section-bgDif{
+    background-color: black;
+}
