@@ -15,7 +15,8 @@
 
 }
 .imageAbout{
-    max-height: 20%;
+    height: auto;
+    width: 90%;
 }
 
 #hero h1{
@@ -31,4 +32,34 @@
 
 .section-bgDif{
     background-color: black;
+}
+#footer{
+  background-color:   #000000;
+}
+
+#hero{
+    background: #d8e9ff;
+}
+
+.img-fluid {
+    width: 100%;
+    height: auto;
+}
+
+.section-bgDif {
+    background-color: #005e8b;
+}
+
+.hero{
+    padding-top: 0px;
+
+}
+
+
+#hero{
+    height: 70vh;
+}
+
+#hero h1 {
+    font-size: 2.5rem;
 }
