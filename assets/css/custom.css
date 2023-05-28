@@ -55,4 +55,47 @@
 
 }
 
+.mobile-nav-toggle {
+    display: none;
+  }
+  
+  /* Add this CSS to make the navbar visible in full screen */
+  @media (max-width: 992px) {
+    #navbar ul {
+      display: none;
+    }
+  
+    #navbar ul.active {
+      display: block;
+    }
+  
+    .mobile-nav-toggle {
+      display: inline-block;
+      cursor: pointer;
+      font-size: 24px;
+      color: #7c7c7c;
+      padding: 10px;
+      margin-right: 0;
+      margin-left: auto;
+    }
+  }
+  
+  /* Add this CSS to display the navigation menu on larger screens */
+  @media (min-width: 992px) {
+    #navbar ul {
+      display: flex;
+      align-items: center;
+    }
+    
+    #navbar ul li {
+      margin-left: 20px;
+    }
+  }
+  #navbar ul.active {
+    display: flex !important;
+    align-items: center;
+  }
 
+
+  
+   
