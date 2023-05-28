@@ -21,13 +21,13 @@
 
 #hero h1{
     color: black;
+    font-size: 30px;
 }
 
 #hero h2 {
     color: rgb(0 141 162);
     margin-bottom: 10px;
-    font-size: 1.5rem;
-    font-weight: 400;
+    font-weight: 350;
 }
 
 .section-bgDif{
@@ -56,10 +56,3 @@
 }
 
 
-#hero{
-    height: 70vh;
-}
-
-#hero h1 {
-    font-size: 2.5rem;
-}

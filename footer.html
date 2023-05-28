@@ -7,7 +7,7 @@
           <div class="col-lg-6">
             <h4>Join Our Newsletter</h4>
             <p>Subscribe our Newsletter to get updated with important growth related information. </p>
-            <form action="" method="post">
+            <form id="newsletter-form" >
               <input type="email" name="email"><input type="submit" value="Subscribe">
             </form>
           </div>
@@ -82,4 +82,32 @@
     
     
     </div>
+    <script>
+      // Selecting the form and input field
+      const form = document.querySelector('#newsletter-form');
+      const emailInput = form.querySelector('input[type="email"]');
+    
+      // Event listener for form submission
+      form.addEventListener('submit', (e) => {
+        e.preventDefault(); // Prevents the form from submitting
+    
+        const email = emailInput.value; // Retrieve the entered email address
+    
+        // Perform validation on the email address
+        if (validateEmail(email)) {
+          // Display a success message if the email format is valid
+          alert('You have successfully subscribed to our newsletter!');
+          emailInput.value = ''; // Clear the input field after successful subscription
+        } else {
+          // Display an error message for invalid email address
+          alert('Please enter a valid email address.');
+        }
+      });
+    
+      // Function to validate the email address using regular expression
+      function validateEmail(email) {
+        const regex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+        return regex.test(email);
+      }
+    </script>
   </footer><!-- End Footer -->
